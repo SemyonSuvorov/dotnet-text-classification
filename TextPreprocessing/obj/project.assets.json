@@ -74,6 +74,19 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "MathNet.Numerics/6.0.0-beta1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -139,11 +152,32 @@
         "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "MathNet.Numerics/6.0.0-beta1": {
+      "sha512": "GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
+      "type": "package",
+      "path": "mathnet.numerics/6.0.0-beta1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net48/MathNet.Numerics.dll",
+        "lib/net48/MathNet.Numerics.xml",
+        "lib/net6.0/MathNet.Numerics.dll",
+        "lib/net6.0/MathNet.Numerics.xml",
+        "lib/net8.0/MathNet.Numerics.dll",
+        "lib/net8.0/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.6.0.0-beta1.nupkg.sha512",
+        "mathnet.numerics.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Deedle >= 3.0.0"
+      "Deedle >= 3.0.0",
+      "MathNet.Numerics >= 6.0.0-beta1"
     ]
   },
   "packageFolders": {
@@ -186,6 +220,10 @@
           "Deedle": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "MathNet.Numerics": {
+            "target": "Package",
+            "version": "[6.0.0-beta1, )"
           }
         },
         "imports": [

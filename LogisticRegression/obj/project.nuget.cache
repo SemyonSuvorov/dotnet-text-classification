@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+j7H6+qSiQCbMEHFrahE9e1ABwR4LkH5yb+pmW14sMAq/ah+xTQPlsAvAE2DfPLOIiLA/+emT4CmlWI5RKDQFQ==",
+  "dgSpecHash": "uCCKFDDmU2kalwSBEdAW1ECkhWc1Np6PUmxgY6cOLkyw0ohLqDpYJGNiPPS5BL9nCRsyAVipfkf25IL0ipCXlw==",
   "success": true,
   "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj",
   "expectedPackageFiles": [
     "/Users/semyonsuvorov/.nuget/packages/deedle/3.0.0/deedle.3.0.0.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/deedle.math/3.0.0/deedle.math.3.0.0.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/fsharp.core/4.5.2/fsharp.core.4.5.2.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics/4.15.0/mathnet.numerics.4.15.0.nupkg.sha512",
+    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics/6.0.0-beta1/mathnet.numerics.6.0.0-beta1.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics.fsharp/4.15.0/mathnet.numerics.fsharp.4.15.0.nupkg.sha512"
   ],
   "logs": []

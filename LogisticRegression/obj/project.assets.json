@@ -93,15 +93,15 @@
           }
         }
       },
-      "MathNet.Numerics/4.15.0": {
+      "MathNet.Numerics/6.0.0-beta1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {
+          "lib/net6.0/MathNet.Numerics.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {
+          "lib/net6.0/MathNet.Numerics.dll": {
             "related": ".xml"
           }
         }
@@ -121,6 +121,20 @@
           "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "TextPreprocessing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Deedle": "3.0.0",
+          "MathNet.Numerics": "6.0.0-beta1"
+        },
+        "compile": {
+          "bin/placeholder/TextPreprocessing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TextPreprocessing.dll": {}
         }
       }
     }
@@ -202,23 +216,23 @@
         "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
-    "MathNet.Numerics/4.15.0": {
-      "sha512": "cP4QgPPiU7boMyL8npvuQyVGVYUd/JQY1AWa+Wl2f//fuJN40qwt9ABRazunZIcDLHg3SSlgD/e+3Lnp69jNTg==",
+    "MathNet.Numerics/6.0.0-beta1": {
+      "sha512": "GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
       "type": "package",
-      "path": "mathnet.numerics/4.15.0",
+      "path": "mathnet.numerics/6.0.0-beta1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "lib/net40/MathNet.Numerics.dll",
-        "lib/net40/MathNet.Numerics.xml",
-        "lib/net461/MathNet.Numerics.dll",
-        "lib/net461/MathNet.Numerics.xml",
-        "lib/netstandard1.3/MathNet.Numerics.dll",
-        "lib/netstandard1.3/MathNet.Numerics.xml",
+        "lib/net48/MathNet.Numerics.dll",
+        "lib/net48/MathNet.Numerics.xml",
+        "lib/net6.0/MathNet.Numerics.dll",
+        "lib/net6.0/MathNet.Numerics.xml",
+        "lib/net8.0/MathNet.Numerics.dll",
+        "lib/net8.0/MathNet.Numerics.xml",
         "lib/netstandard2.0/MathNet.Numerics.dll",
         "lib/netstandard2.0/MathNet.Numerics.xml",
-        "mathnet.numerics.4.15.0.nupkg.sha512",
+        "mathnet.numerics.6.0.0-beta1.nupkg.sha512",
         "mathnet.numerics.nuspec"
       ]
     },
@@ -239,12 +253,18 @@
         "mathnet.numerics.fsharp.4.15.0.nupkg.sha512",
         "mathnet.numerics.fsharp.nuspec"
       ]
+    },
+    "TextPreprocessing/1.0.0": {
+      "type": "project",
+      "path": "../TextPreprocessing/TextPreprocessing.csproj",
+      "msbuildProject": "../TextPreprocessing/TextPreprocessing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Deedle >= 3.0.0",
-      "Deedle.Math >= 3.0.0"
+      "Deedle.Math >= 3.0.0",
+      "TextPreprocessing >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -271,7 +291,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj": {
+              "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

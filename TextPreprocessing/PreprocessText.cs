@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using MathNet.Numerics.LinearAlgebra;
+using System.Text.RegularExpressions;
 using Deedle;
 
 
@@ -6,10 +7,10 @@ namespace TextPreprocessing;
 
 public class PreprocessText
 {
-    private Dictionary<string, int> _dictOfWords = new ();
-
+    //df for each token
+    private int _numOfDocs;
+    private readonly Dictionary<string, int> _dfDict = new();
     private readonly List<string> _stopWordsList = new();
-
     public PreprocessText()
     {
         const string filePath = "stopwords.txt";
@@ -25,10 +26,12 @@ public class PreprocessText
 
         reader.Close();
     }
-    
-    private void TokenizeIntoWords(string input)
+    private Dictionary<string, int> TokenizeAndTf(string input)
     {
         var tokens = input.Split(" ").ToList();
+        var tfDict = new Dictionary<string, int>();
+        List<string> listOfTokens = new();
+        
         foreach (var token in tokens)
         {
             var loweredToken = token.ToLower();
@@ -39,35 +42,94 @@ public class PreprocessText
             {
                 continue;
             }
-            
-            if (_dictOfWords.ContainsKey(normalizedToken))
+            if (tfDict.ContainsKey(normalizedToken))
             {
-                _dictOfWords[normalizedToken]++;
+                tfDict[normalizedToken]++;
+            }
+            else
+            {
+                tfDict.TryAdd(normalizedToken, 1);
+            }
+
+            if (!listOfTokens.Contains(normalizedToken))
+            {
+                listOfTokens.Add(normalizedToken);
             }
             
-            _dictOfWords.TryAdd(normalizedToken, 1);
         }
+        foreach (var tok in listOfTokens)
+        {
+            if (_dfDict.ContainsKey(tok))
+            {
+                _dfDict[tok]++;
+            }
+            else
+            {
+                _dfDict.TryAdd(tok, 1);
+            }
+        }
+        return tfDict;
     }
 
-    public void TokenizeTextCorpus(Frame<int, string> df)
+    private Dictionary<string, double> ComputeIdf()
     {
+        return _dfDict.ToDictionary(pair => pair.Key, pair => Math.Log(_numOfDocs / pair.Value));
+    }
+    
+    //TODO public double[] VectorizeOneFeature(string input)
+
+    public Matrix<double> VectorizeFeatures(Frame<int, string> df)
+    {
+        Console.WriteLine("Vectorizing traing data...");
         var header = df.GetColumn<string>("Header").Values.ToList();
         var description = df.GetColumn<string>("Description").Values.ToList();
-        var concatedFeature = new string[header.Count];
+        var concatedFeatures = new string[header.Count];
         for (int i = 0; i < header.Count; i++)
         {
-            concatedFeature[i] = header[i] + " " + description[i];
+            concatedFeatures[i] = header[i] + " " + description[i];
         }
-
-        foreach (var feature in concatedFeature)
+        
+        List<Dictionary<string, int>> tfDicts = new();
+        _numOfDocs = concatedFeatures.Length;
+        foreach (var feature in concatedFeatures)
         {
-            TokenizeIntoWords(feature);
+            tfDicts.Add(TokenizeAndTf(feature));
         }
+        //compute idf
+        var idfDict = ComputeIdf();
+        //compute tfidf
+        Matrix<double> features = Matrix<double>.Build.Dense(_numOfDocs, _dfDict.Count);
+        int rowindex = 0;
+        foreach (var tfdict in tfDicts)
+        {
+            var tfidfVector = new List<double>(_dfDict.Count);
+            foreach (var key in _dfDict.Keys)
+            {
+                if (!tfdict.ContainsKey(key))
+                {
+                    tfidfVector.Add(0);
+                }
+                else
+                {
+                    tfidfVector.Add(tfdict[key] * idfDict[key]);
+                }
+            }
+            Vector<double> vec = Vector<double>.Build.DenseOfEnumerable(tfidfVector);
+            features.SetRow(rowindex, vec);
+            rowindex++;
+        }
+        //add bias term
+        var ones = new double[features.RowCount];
+        Array.Fill(ones, 1.0);
+        var bias = Vector<double>.Build.DenseOfArray(ones);
+        var featureMatrix = features.InsertColumn(0, bias);
+        Console.WriteLine("Done!");
+        return featureMatrix;
     }
 
-    public void PrintDict()
+    public void PrintDfDict()
     {
-        foreach (var pair in _dictOfWords.OrderByDescending(pair => pair.Value))
+        foreach (var pair in _dfDict.OrderByDescending(pair => pair.Value))
         {
             Console.WriteLine($"{pair.Key} -> {pair.Value}");
         }

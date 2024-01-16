@@ -10,3 +10,6 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/refint/LogisticRegression.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/ref/LogisticRegression.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/bin/Debug/net7.0/TextPreprocessing.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/bin/Debug/net7.0/TextPreprocessing.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.csproj.CopyComplete

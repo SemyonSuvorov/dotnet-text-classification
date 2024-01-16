@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "TextPreprocessing/1.0.0": {
         "dependencies": {
-          "Deedle": "3.0.0"
+          "Deedle": "3.0.0",
+          "MathNet.Numerics": "6.0.0-beta1"
         },
         "runtime": {
           "TextPreprocessing.dll": {}
@@ -76,6 +77,14 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "MathNet.Numerics/6.0.0-beta1": {
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
       }
     }
   },
@@ -98,6 +107,13 @@
       "sha512": "sha512-apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
       "path": "fsharp.core/4.5.2",
       "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
+    },
+    "MathNet.Numerics/6.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
+      "path": "mathnet.numerics/6.0.0-beta1",
+      "hashPath": "mathnet.numerics.6.0.0-beta1.nupkg.sha512"
     }
   }
 }

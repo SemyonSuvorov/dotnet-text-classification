@@ -43,8 +43,29 @@ Console.WriteLine(predForOneSample);
 */
 
 
-var p = new PreprocessText();
-
+var logreg = new LogisticRegression(100);
 var toyFrame = Frame.ReadCsv("test.csv");
-p.TokenizeTextCorpus(toyFrame);
-p.PrintDict();
+logreg.Fit(toyFrame, 11);
+/*
+var st = new List<string>()
+{
+    "Ministry of Agriculture and Food - Kazan kazan kazan kazan" ,
+    "Rafflesia flowers are among the largest on the planet: their diameter is 60-100 cm, and their weight reaches 8 kg. " +
+    "An alternative name flowers is also sometimes food found - corpse lily Kazan."
+};
+*/
+
+/*
+foreach (var v in st)
+{
+    var f = p.TokenizeAndTf(v);
+    foreach (var pair in f.OrderByDescending(pair => pair.Value))
+    {
+        Console.WriteLine($"{pair.Key} -> {pair.Value}");
+    }
+    Console.WriteLine();
+
+}
+
+p.PrintDfDict();
+*/

@@ -9,7 +9,8 @@
       "LogisticRegression/1.0.0": {
         "dependencies": {
           "Deedle": "3.0.0",
-          "Deedle.Math": "3.0.0"
+          "Deedle.Math": "3.0.0",
+          "TextPreprocessing": "1.0.0"
         },
         "runtime": {
           "LogisticRegression.dll": {}
@@ -29,7 +30,7 @@
       "Deedle.Math/3.0.0": {
         "dependencies": {
           "Deedle": "3.0.0",
-          "MathNet.Numerics": "4.15.0",
+          "MathNet.Numerics": "6.0.0-beta1",
           "MathNet.Numerics.FSharp": "4.15.0"
         },
         "runtime": {
@@ -91,24 +92,33 @@
           }
         }
       },
-      "MathNet.Numerics/4.15.0": {
+      "MathNet.Numerics/6.0.0-beta1": {
         "runtime": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {
-            "assemblyVersion": "4.15.0.0",
-            "fileVersion": "4.15.0.0"
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
           }
         }
       },
       "MathNet.Numerics.FSharp/4.15.0": {
         "dependencies": {
           "FSharp.Core": "4.5.2",
-          "MathNet.Numerics": "4.15.0"
+          "MathNet.Numerics": "6.0.0-beta1"
         },
         "runtime": {
           "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
             "assemblyVersion": "4.15.0.0",
             "fileVersion": "4.15.0.0"
           }
+        }
+      },
+      "TextPreprocessing/1.0.0": {
+        "dependencies": {
+          "Deedle": "3.0.0",
+          "MathNet.Numerics": "6.0.0-beta1"
+        },
+        "runtime": {
+          "TextPreprocessing.dll": {}
         }
       }
     }
@@ -140,12 +150,12 @@
       "path": "fsharp.core/4.5.2",
       "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
     },
-    "MathNet.Numerics/4.15.0": {
+    "MathNet.Numerics/6.0.0-beta1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cP4QgPPiU7boMyL8npvuQyVGVYUd/JQY1AWa+Wl2f//fuJN40qwt9ABRazunZIcDLHg3SSlgD/e+3Lnp69jNTg==",
-      "path": "mathnet.numerics/4.15.0",
-      "hashPath": "mathnet.numerics.4.15.0.nupkg.sha512"
+      "sha512": "sha512-GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
+      "path": "mathnet.numerics/6.0.0-beta1",
+      "hashPath": "mathnet.numerics.6.0.0-beta1.nupkg.sha512"
     },
     "MathNet.Numerics.FSharp/4.15.0": {
       "type": "package",
@@ -153,6 +163,11 @@
       "sha512": "sha512-PtyywucUehsUxy1YAmjciAgcHcKsRZ8jSOMT29sG2LTZ4FeaSEpfOOHh6Cm0iJn8LhOXqpAMerqJmhygg6IbSQ==",
       "path": "mathnet.numerics.fsharp/4.15.0",
       "hashPath": "mathnet.numerics.fsharp.4.15.0.nupkg.sha512"
+    },
+    "TextPreprocessing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

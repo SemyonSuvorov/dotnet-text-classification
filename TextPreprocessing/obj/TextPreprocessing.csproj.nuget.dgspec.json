@@ -41,6 +41,10 @@
             "Deedle": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[6.0.0-beta1, )"
             }
           },
           "imports": [

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <PackageReference Include="Deedle" Version="3.0.0" />
+      <PackageReference Include="MathNet.Numerics" Version="6.0.0-beta1" />
     </ItemGroup>
 
 </Project>

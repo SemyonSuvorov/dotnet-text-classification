@@ -25,7 +25,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj": {
+                "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -174,6 +178,10 @@
             "Deedle": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[6.0.0-beta1, )"
             }
           },
           "imports": [
