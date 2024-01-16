@@ -10,6 +10,7 @@ public class LogisticRegression
     private Vector<double>? _weights;
     private readonly int _maxIterations;
     private int _numOfFeatures;
+    private PreprocessText _p = new();
     
     public LogisticRegression(int maxIterations)
     {
@@ -19,14 +20,14 @@ public class LogisticRegression
     public void Fit(Frame<int, string> trainDf, double learningRate)
     {
         //save target from dataframe
-        var p = new PreprocessText();
+        
         //predict class 1 as positive, others as negative
         var y = trainDf.Columns["Target"]
             .Select(x => Convert.ToDouble(x.Value))
             .Select(x => x.Value == 1.0 ? 1.0 : 0.0).ToVector();
         trainDf.DropColumn("Target");
         //vectorized text
-        var featureMatrix = p.VectorizeFeatures(trainDf);
+        var featureMatrix = _p.VectorizeFeatures(trainDf);
         
         
         _numOfFeatures = featureMatrix.ColumnCount;
@@ -55,28 +56,19 @@ public class LogisticRegression
         Console.WriteLine($"LogLoss: {losses.First()} -> {losses.Last()}");
     }
 
-    public List<double> PredictProbaForMultipleSamples(Matrix<double> featureMatrix)
-    {
-        var yPred = (featureMatrix * _weights).Map(Sigmoid,Zeros.Include);
-        return yPred.ToList();
-    }
-    /* todo
     public double PredictProbaForOneSample(string input)
     {
         //vectorize input
-        
+        var feature = _p.VectorizeOneFeature(input);
         //check shapes
         if (feature.Count != _numOfFeatures)
         {
             throw new Exception($"Shape of feature vector must be equal to {_numOfFeatures}");
         }
         //add bias term
-        feature[0] = 1.0;
-        var featureVector = Vector<double>.Build.DenseOfEnumerable(feature);
-        var yPred = Sigmoid(featureVector * _weights);
+        var yPred = Sigmoid(feature * _weights);
         return yPred;
     }
-    */
 
     private void GradientDescent(Matrix<double> featureMatrix,
         Vector<double> yTrue,Vector<double> yPred, double lr)
@@ -91,7 +83,6 @@ public class LogisticRegression
     {
         //count loss for each value
         var a = yTrue.Select((t, i) => LogLoss(t, yPred[i])).ToList();
-        int t;
         return a.Sum();
     }
     private static double LogLoss(double yTrue, double pred)
