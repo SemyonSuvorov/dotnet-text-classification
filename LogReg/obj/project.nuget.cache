@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "7xO3aJhc8CwmzKHuZWhTzLB1V3Ds+BoXcGY0ChgKn5fm/q+Qw9AEyeCn7rJa5xBLiZaaTe8bWcA/HW+ZrDZ/+A==",
+  "success": true,
+  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogReg/LogReg.csproj",
+  "expectedPackageFiles": [
+    "/Users/semyonsuvorov/.nuget/packages/deedle/3.0.0/deedle.3.0.0.nupkg.sha512",
+    "/Users/semyonsuvorov/.nuget/packages/deedle.math/3.0.0/deedle.math.3.0.0.nupkg.sha512",
+    "/Users/semyonsuvorov/.nuget/packages/fsharp.core/4.5.2/fsharp.core.4.5.2.nupkg.sha512",
+    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics/4.15.0/mathnet.numerics.4.15.0.nupkg.sha512",
+    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics.fsharp/4.15.0/mathnet.numerics.fsharp.4.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}
