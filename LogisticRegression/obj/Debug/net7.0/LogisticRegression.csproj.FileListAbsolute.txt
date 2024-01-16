@@ -1,0 +1,12 @@
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/bin/Debug/net7.0/LogisticRegression.deps.json
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/bin/Debug/net7.0/LogisticRegression.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/bin/Debug/net7.0/LogisticRegression.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/refint/LogisticRegression.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/LogisticRegression.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/Debug/net7.0/ref/LogisticRegression.dll

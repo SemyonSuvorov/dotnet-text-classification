@@ -8,9 +8,10 @@
     ".NETCoreApp,Version=v7.0": {
       "LogReg/1.0.0": {
         "dependencies": {
-          "ClassLibrary": "1.0.0",
           "Deedle": "3.0.0",
-          "Deedle.Math": "3.0.0"
+          "Deedle.Math": "3.0.0",
+          "LogisticRegression": "1.0.0",
+          "TextPreprocessing": "1.0.0"
         },
         "runtime": {
           "LogReg.dll": {}
@@ -112,13 +113,21 @@
           }
         }
       },
-      "ClassLibrary/1.0.0": {
+      "LogisticRegression/1.0.0": {
         "dependencies": {
           "Deedle": "3.0.0",
           "Deedle.Math": "3.0.0"
         },
         "runtime": {
-          "ClassLibrary.dll": {}
+          "LogisticRegression.dll": {}
+        }
+      },
+      "TextPreprocessing/1.0.0": {
+        "dependencies": {
+          "Deedle": "3.0.0"
+        },
+        "runtime": {
+          "TextPreprocessing.dll": {}
         }
       }
     }
@@ -164,7 +173,12 @@
       "path": "mathnet.numerics.fsharp/4.15.0",
       "hashPath": "mathnet.numerics.fsharp.4.15.0.nupkg.sha512"
     },
-    "ClassLibrary/1.0.0": {
+    "LogisticRegression/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextPreprocessing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

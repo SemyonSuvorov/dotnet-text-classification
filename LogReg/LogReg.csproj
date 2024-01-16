@@ -8,7 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+      <ProjectReference Include="..\LogisticRegression\LogisticRegression.csproj" />
+      <ProjectReference Include="..\TextPreprocessing\TextPreprocessing.csproj" />
     </ItemGroup>
 
     <ItemGroup>

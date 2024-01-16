@@ -123,7 +123,7 @@
           }
         }
       },
-      "ClassLibrary/1.0.0": {
+      "LogisticRegression/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -131,10 +131,23 @@
           "Deedle.Math": "3.0.0"
         },
         "compile": {
-          "bin/placeholder/ClassLibrary.dll": {}
+          "bin/placeholder/LogisticRegression.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClassLibrary.dll": {}
+          "bin/placeholder/LogisticRegression.dll": {}
+        }
+      },
+      "TextPreprocessing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Deedle": "3.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TextPreprocessing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TextPreprocessing.dll": {}
         }
       }
     }
@@ -254,17 +267,23 @@
         "mathnet.numerics.fsharp.nuspec"
       ]
     },
-    "ClassLibrary/1.0.0": {
+    "LogisticRegression/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary/ClassLibrary.csproj",
-      "msbuildProject": "../ClassLibrary/ClassLibrary.csproj"
+      "path": "../LogisticRegression/LogisticRegression.csproj",
+      "msbuildProject": "../LogisticRegression/LogisticRegression.csproj"
+    },
+    "TextPreprocessing/1.0.0": {
+      "type": "project",
+      "path": "../TextPreprocessing/TextPreprocessing.csproj",
+      "msbuildProject": "../TextPreprocessing/TextPreprocessing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ClassLibrary >= 1.0.0",
       "Deedle >= 3.0.0",
-      "Deedle.Math >= 3.0.0"
+      "Deedle.Math >= 3.0.0",
+      "LogisticRegression >= 1.0.0",
+      "TextPreprocessing >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -292,8 +311,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/semyonsuvorov/RiderProjects/LogReg/ClassLibrary/ClassLibrary.csproj": {
-              "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/ClassLibrary/ClassLibrary.csproj"
+            "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj": {
+              "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj"
+            },
+            "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj": {
+              "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj"
             }
           }
         }
