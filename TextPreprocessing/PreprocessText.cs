@@ -1,5 +1,7 @@
-﻿using MathNet.Numerics.LinearAlgebra;
+﻿using System.Reflection.Metadata;
+using MathNet.Numerics.LinearAlgebra;
 using System.Text.RegularExpressions;
+using Aspose.Cells;
 using Deedle;
 
 
@@ -94,6 +96,22 @@ public class PreprocessText
         return feature;
     }
 
+    public List<NaiveBayes.Document> CreateTrainCorpusFromXlsx(string filePath)
+    {
+        var trainCorpus = new List<NaiveBayes.Document> { new ("1", "2") };
+        var wb = new Workbook("TrainData.xlsx");
+
+        var worksheet = wb.Worksheets[0];
+
+        int rows = worksheet.Cells.MaxDataRow;
+
+        for (int i = 0; i < rows; i++)
+        {
+            trainCorpus.Add(new NaiveBayes.Document(worksheet.Cells[i, 0].Value.ToString(), worksheet.Cells[i, 1].Value.ToString()));
+        }
+
+        return trainCorpus;
+    }
     public Matrix<double> VectorizeFeatures(Frame<int, string> df)
     {
         Console.WriteLine("Vectorizing traing data...");

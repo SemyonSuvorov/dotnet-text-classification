@@ -7,8 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Aspose.Cells" Version="24.1.0" />
       <PackageReference Include="Deedle" Version="3.0.0" />
       <PackageReference Include="MathNet.Numerics" Version="6.0.0-beta1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NaiveBayes\NaiveBayes.csproj" />
     </ItemGroup>
 
 </Project>
