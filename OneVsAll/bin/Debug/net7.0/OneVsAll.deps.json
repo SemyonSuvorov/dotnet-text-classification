@@ -6,15 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "LogReg/1.0.0": {
+      "OneVsAll/1.0.0": {
         "dependencies": {
           "Deedle": "3.0.0",
           "Deedle.Math": "3.0.0",
-          "OneVsAll": "1.0.0",
           "TextPreprocessing": "1.0.0"
         },
         "runtime": {
-          "LogReg.dll": {}
+          "OneVsAll.dll": {}
         }
       },
       "Deedle/3.0.0": {
@@ -113,16 +112,6 @@
           }
         }
       },
-      "OneVsAll/1.0.0": {
-        "dependencies": {
-          "Deedle": "3.0.0",
-          "Deedle.Math": "3.0.0",
-          "TextPreprocessing": "1.0.0"
-        },
-        "runtime": {
-          "OneVsAll.dll": {}
-        }
-      },
       "TextPreprocessing/1.0.0": {
         "dependencies": {
           "Deedle": "3.0.0",
@@ -135,7 +124,7 @@
     }
   },
   "libraries": {
-    "LogReg/1.0.0": {
+    "OneVsAll/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -174,11 +163,6 @@
       "sha512": "sha512-PtyywucUehsUxy1YAmjciAgcHcKsRZ8jSOMT29sG2LTZ4FeaSEpfOOHh6Cm0iJn8LhOXqpAMerqJmhygg6IbSQ==",
       "path": "mathnet.numerics.fsharp/4.15.0",
       "hashPath": "mathnet.numerics.fsharp.4.15.0.nupkg.sha512"
-    },
-    "OneVsAll/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "TextPreprocessing/1.0.0": {
       "type": "project",

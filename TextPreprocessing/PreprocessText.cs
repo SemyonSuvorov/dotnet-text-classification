@@ -7,9 +7,8 @@ namespace TextPreprocessing;
 
 public class PreprocessText
 {
-    //df for each token
     private int _numOfDocs;
-    private Dictionary<string, double> _idfDict;
+    private Dictionary<string, double> _idfDict = new();
     private readonly Dictionary<string, int> _dfDict = new();
     private readonly List<string> _stopWordsList = new();
     public PreprocessText()
@@ -39,35 +38,20 @@ public class PreprocessText
             var normalizedToken = Regex.Replace(loweredToken, 
                 "[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]", "")
                 .Replace(@"\", "").Replace("\"","");
-            if (_stopWordsList.Contains(normalizedToken))
-            {
-                continue;
-            }
-            if (tfDict.ContainsKey(normalizedToken))
-            {
-                tfDict[normalizedToken]++;
-            }
-            else
-            {
-                tfDict.TryAdd(normalizedToken, 1);
-            }
-
-            if (!listOfTokens.Contains(normalizedToken))
-            {
-                listOfTokens.Add(normalizedToken);
-            }
             
+            if (_stopWordsList.Contains(normalizedToken)) continue;
+            
+            if (tfDict.ContainsKey(normalizedToken)) tfDict[normalizedToken]++;
+            
+            else tfDict.TryAdd(normalizedToken, 1);
+            
+            if (!listOfTokens.Contains(normalizedToken)) listOfTokens.Add(normalizedToken);
         }
         foreach (var tok in listOfTokens)
         {
-            if (_dfDict.ContainsKey(tok))
-            {
-                _dfDict[tok]++;
-            }
-            else
-            {
-                _dfDict.TryAdd(tok, 1);
-            }
+            if (_dfDict.ContainsKey(tok)) _dfDict[tok]++;
+            
+            else _dfDict.TryAdd(tok, 1);
         }
         return tfDict;
     }
@@ -81,42 +65,32 @@ public class PreprocessText
     {
         var tokens = input.Split(" ").ToList();
         var tfDict = new Dictionary<string, int>();
-
+        //tokenize 
         foreach (var token in tokens)
         {
             var loweredToken = token.ToLower();
             var normalizedToken = Regex.Replace(loweredToken, 
                     "[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]", "")
                 .Replace(@"\", "").Replace("\"","");
-            if (_stopWordsList.Contains(normalizedToken))
-            {
-                continue;
-            }
-            if (tfDict.ContainsKey(normalizedToken) && _dfDict.ContainsKey(normalizedToken))
-            {
+            
+            if (_stopWordsList.Contains(normalizedToken)) continue;
+            
+            if (tfDict.ContainsKey(normalizedToken) && _dfDict.ContainsKey(normalizedToken)) 
                 tfDict[normalizedToken]++;
-            }
-            else if(_dfDict.ContainsKey(normalizedToken))
-            {
-                tfDict.TryAdd(normalizedToken, 1);
-            }
+            
+            else if(_dfDict.ContainsKey(normalizedToken)) tfDict.TryAdd(normalizedToken, 1);
+            
         }
         //compute tfidf
         var vector = new List<double>(_dfDict.Count);
         foreach (var key in _dfDict.Keys)
         {
-            if (!tfDict.ContainsKey(key))
-            {
-                vector.Add(0);
-            }
-            else
-            {
-                vector.Add(tfDict[key] * _idfDict[key]);
-            }
+            if (!tfDict.ContainsKey(key)) vector.Add(0);
+            else vector.Add(tfDict[key] * _idfDict[key]);
         }
         //add bias term
         vector.Insert(0, 1);
-        Vector<double> feature = Vector<double>.Build.DenseOfEnumerable(vector);
+        var feature = Vector<double>.Build.DenseOfEnumerable(vector);
         return feature;
     }
 

@@ -1,0 +1,15 @@
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/OneVsAll.deps.json
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/OneVsAll.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/TextPreprocessing.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/TextPreprocessing.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.csproj.CopyComplete
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/refint/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/ref/OneVsAll.dll

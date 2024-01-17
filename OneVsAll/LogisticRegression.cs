@@ -10,25 +10,18 @@ public class LogisticRegression
     private Vector<double>? _weights;
     private readonly int _maxIterations;
     private int _numOfFeatures;
-    private PreprocessText _p = new();
     
     public LogisticRegression(int maxIterations)
     {
         _maxIterations = maxIterations;
     }
     
-    public void Fit(Frame<int, string> trainDf, double learningRate)
+    public void Fit(Matrix<double> featureMatrix, Series<int,double> yTrue, int predictedClass, double learningRate)
     {
         //save target from dataframe
-        
         //predict class 1 as positive, others as negative
-        var y = trainDf.Columns["Target"]
-            .Select(x => Convert.ToDouble(x.Value))
-            .Select(x => x.Value == 1.0 ? 1.0 : 0.0).ToVector();
-        trainDf.DropColumn("Target");
-        //vectorized text
-        var featureMatrix = _p.VectorizeFeatures(trainDf);
-        
+        var y = yTrue
+            .Select(x => (int)x.Value == predictedClass ? 1.0 : 0.0).ToVector();
         
         _numOfFeatures = featureMatrix.ColumnCount;
         //initialize weights
@@ -56,10 +49,10 @@ public class LogisticRegression
         Console.WriteLine($"LogLoss: {losses.First()} -> {losses.Last()}");
     }
 
-    public double PredictProbaForOneSample(string input)
+    public double PredictProbaForOneSample(string input, PreprocessText p)
     {
         //vectorize input
-        var feature = _p.VectorizeOneFeature(input);
+        var feature = p.VectorizeOneFeature(input);
         //check shapes
         if (feature.Count != _numOfFeatures)
         {

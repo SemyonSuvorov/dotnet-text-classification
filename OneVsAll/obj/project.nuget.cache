@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uCCKFDDmU2kalwSBEdAW1ECkhWc1Np6PUmxgY6cOLkyw0ohLqDpYJGNiPPS5BL9nCRsyAVipfkf25IL0ipCXlw==",
+  "dgSpecHash": "COTqWnu32jFBuJi6q0QHiLnwpDb4HsGXbfbRFTUxYXL7TPXC8QGmaIxpAg+AXI924gjIijhy/+2t8pvB+Povdw==",
   "success": true,
-  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj",
+  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
   "expectedPackageFiles": [
     "/Users/semyonsuvorov/.nuget/packages/deedle/3.0.0/deedle.3.0.0.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/deedle.math/3.0.0/deedle.math.3.0.0.nupkg.sha512",

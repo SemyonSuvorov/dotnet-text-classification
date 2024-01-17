@@ -33,7 +33,7 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/Deedle.Math.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/MathNet.Numerics.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/MathNet.Numerics.FSharp.dll
-/Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/LogisticRegression.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/TextPreprocessing.dll
-/Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/LogisticRegression.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/TextPreprocessing.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/LogReg/bin/Debug/net7.0/OneVsAll.pdb

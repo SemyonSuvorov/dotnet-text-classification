@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogReg", "LogReg\LogReg.csproj", "{B8A5F757-C484-442A-ABB2-424D3E1BFABD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticRegression", "LogisticRegression\LogisticRegression.csproj", "{83929D08-2CBD-4398-BF47-4D8F4870C21B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneVsAll", "OneVsAll\OneVsAll.csproj", "{83929D08-2CBD-4398-BF47-4D8F4870C21B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextPreprocessing", "TextPreprocessing\TextPreprocessing.csproj", "{E1981C76-ADBC-4B15-AEDA-E3FB41A448F7}"
 EndProject

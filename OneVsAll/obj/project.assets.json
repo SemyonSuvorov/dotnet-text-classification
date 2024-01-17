@@ -273,11 +273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj",
-      "projectName": "LogisticRegression",
-      "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/LogisticRegression.csproj",
+      "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
+      "projectName": "OneVsAll",
+      "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
       "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
-      "outputPath": "/Users/semyonsuvorov/RiderProjects/LogReg/LogisticRegression/obj/",
+      "outputPath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
