@@ -1,0 +1,12 @@
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/bin/Debug/net7.0/NaiveBayes.deps.json
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/bin/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/bin/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/refint/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/ref/NaiveBayes.dll

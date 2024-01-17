@@ -34,19 +34,17 @@ public class LogisticRegression
         _weights = Vector<double>.Build.DenseOfArray(temp);
         
         //train cycle
-        Console.WriteLine("Starting traing...");
         var losses = new List<double>();
         for (int i = 0; i < _maxIterations; i++)
         {
-            if(i % 10 == 0) Console.WriteLine($"Iteration: {i} / {_maxIterations}");
+            if(i % 10 == 0) Console.WriteLine($"Regressor for {predictedClass} class, training progress: {i}%");
             //count dot-product
             var yPred = (featureMatrix * _weights).Map(Sigmoid,Zeros.Include);
             var loss = ComputeLoss(y, yPred);
             losses.Add(loss);
             GradientDescent(featureMatrix,  y, yPred, learningRate);
         }
-        Console.WriteLine("Done!");
-        Console.WriteLine($"LogLoss: {losses.First()} -> {losses.Last()}");
+        Console.WriteLine($"LogLoss for {predictedClass} class: {losses.First()} -> {losses.Last()}");
     }
 
     public double PredictProbaForOneSample(string input, PreprocessText p)

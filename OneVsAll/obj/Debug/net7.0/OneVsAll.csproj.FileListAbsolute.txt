@@ -13,3 +13,5 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/refint/OneVsAll.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/OneVsAll.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/ref/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/NaiveBayes.pdb

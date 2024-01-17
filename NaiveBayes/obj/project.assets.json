@@ -20,127 +20,6 @@
           }
         }
       },
-      "Deedle/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Deedle.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Deedle.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Deedle.Math/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Deedle": "3.0.0",
-          "MathNet.Numerics": "4.15.0",
-          "MathNet.Numerics.FSharp": "4.15.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Deedle.Math.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Deedle.Math.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "FSharp.Core/4.5.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.6/FSharp.Core.dll": {
-            "related": ".optdata;.sigdata;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.6/FSharp.Core.dll": {
-            "related": ".optdata;.sigdata;.xml"
-          }
-        },
-        "resource": {
-          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
-            "locale": "en"
-          },
-          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "MathNet.Numerics/6.0.0-beta1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/MathNet.Numerics.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/MathNet.Numerics.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "MathNet.Numerics.FSharp/4.15.0": {
-        "type": "package",
-        "dependencies": {
-          "FSharp.Core": "4.3.3",
-          "MathNet.Numerics": "4.15.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -267,35 +146,6 @@
             "rid": "win"
           }
         }
-      },
-      "NaiveBayes/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Aspose.Cells": "24.1.0"
-        },
-        "compile": {
-          "bin/placeholder/NaiveBayes.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/NaiveBayes.dll": {}
-        }
-      },
-      "TextPreprocessing/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Aspose.Cells": "24.1.0",
-          "Deedle": "3.0.0",
-          "MathNet.Numerics": "6.0.0-beta1",
-          "NaiveBayes": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TextPreprocessing.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TextPreprocessing.dll": {}
-        }
       }
     }
   },
@@ -332,120 +182,6 @@
         "lib/net8.0/Aspose.Cells.xml",
         "lib/netstandard2.0/Aspose.Cells.dll",
         "lib/netstandard2.0/Aspose.Cells.xml"
-      ]
-    },
-    "Deedle/3.0.0": {
-      "sha512": "qYSiNngzmNvep4iCwnWM9MUc2NsR2HG+nG5HuEtqxwwJlUMNraokynArNUOZOgw2xGW/bhKKhpZ3nYAVpGyrhw==",
-      "type": "package",
-      "path": "deedle/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Deedle.fsx",
-        "deedle.3.0.0.nupkg.sha512",
-        "deedle.nuspec",
-        "lib/netstandard2.0/Deedle.dll",
-        "lib/netstandard2.0/Deedle.pdb"
-      ]
-    },
-    "Deedle.Math/3.0.0": {
-      "sha512": "6jIeO1fQYWcCwnU4jXxC+uGZhOjs4rj1jVCbjkkuxDHBZcBkj2QkXD/9vwTK4ooW8Vx3+peum3HYhrg60IxKcw==",
-      "type": "package",
-      "path": "deedle.math/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Deedle.Math.fsx",
-        "deedle.math.3.0.0.nupkg.sha512",
-        "deedle.math.nuspec",
-        "lib/netstandard2.0/Deedle.Math.dll",
-        "lib/netstandard2.0/Deedle.Math.pdb"
-      ]
-    },
-    "FSharp.Core/4.5.2": {
-      "sha512": "apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
-      "type": "package",
-      "path": "fsharp.core/4.5.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fsharp.core.4.5.2.nupkg.sha512",
-        "fsharp.core.nuspec",
-        "lib/net45/FSharp.Core.dll",
-        "lib/net45/FSharp.Core.optdata",
-        "lib/net45/FSharp.Core.resources.dll",
-        "lib/net45/FSharp.Core.sigdata",
-        "lib/net45/FSharp.Core.xml",
-        "lib/net45/cs/FSharp.Core.resources.dll",
-        "lib/net45/de/FSharp.Core.resources.dll",
-        "lib/net45/en/FSharp.Core.resources.dll",
-        "lib/net45/es/FSharp.Core.resources.dll",
-        "lib/net45/fr/FSharp.Core.resources.dll",
-        "lib/net45/it/FSharp.Core.resources.dll",
-        "lib/net45/ja/FSharp.Core.resources.dll",
-        "lib/net45/ko/FSharp.Core.resources.dll",
-        "lib/net45/pl/FSharp.Core.resources.dll",
-        "lib/net45/pt-BR/FSharp.Core.resources.dll",
-        "lib/net45/ru/FSharp.Core.resources.dll",
-        "lib/net45/tr/FSharp.Core.resources.dll",
-        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
-        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/FSharp.Core.dll",
-        "lib/netstandard1.6/FSharp.Core.optdata",
-        "lib/netstandard1.6/FSharp.Core.sigdata",
-        "lib/netstandard1.6/FSharp.Core.xml",
-        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
-      ]
-    },
-    "MathNet.Numerics/6.0.0-beta1": {
-      "sha512": "GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
-      "type": "package",
-      "path": "mathnet.numerics/6.0.0-beta1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net48/MathNet.Numerics.dll",
-        "lib/net48/MathNet.Numerics.xml",
-        "lib/net6.0/MathNet.Numerics.dll",
-        "lib/net6.0/MathNet.Numerics.xml",
-        "lib/net8.0/MathNet.Numerics.dll",
-        "lib/net8.0/MathNet.Numerics.xml",
-        "lib/netstandard2.0/MathNet.Numerics.dll",
-        "lib/netstandard2.0/MathNet.Numerics.xml",
-        "mathnet.numerics.6.0.0-beta1.nupkg.sha512",
-        "mathnet.numerics.nuspec"
-      ]
-    },
-    "MathNet.Numerics.FSharp/4.15.0": {
-      "sha512": "PtyywucUehsUxy1YAmjciAgcHcKsRZ8jSOMT29sG2LTZ4FeaSEpfOOHh6Cm0iJn8LhOXqpAMerqJmhygg6IbSQ==",
-      "type": "package",
-      "path": "mathnet.numerics.fsharp/4.15.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net45/MathNet.Numerics.FSharp.dll",
-        "lib/net45/MathNet.Numerics.FSharp.xml",
-        "lib/netstandard1.6/MathNet.Numerics.FSharp.dll",
-        "lib/netstandard1.6/MathNet.Numerics.FSharp.xml",
-        "lib/netstandard2.0/MathNet.Numerics.FSharp.dll",
-        "lib/netstandard2.0/MathNet.Numerics.FSharp.xml",
-        "mathnet.numerics.fsharp.4.15.0.nupkg.sha512",
-        "mathnet.numerics.fsharp.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
@@ -686,24 +422,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "NaiveBayes/1.0.0": {
-      "type": "project",
-      "path": "../NaiveBayes/NaiveBayes.csproj",
-      "msbuildProject": "../NaiveBayes/NaiveBayes.csproj"
-    },
-    "TextPreprocessing/1.0.0": {
-      "type": "project",
-      "path": "../TextPreprocessing/TextPreprocessing.csproj",
-      "msbuildProject": "../TextPreprocessing/TextPreprocessing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Aspose.Cells >= 24.1.0",
-      "Deedle >= 3.0.0",
-      "Deedle.Math >= 3.0.0",
-      "TextPreprocessing >= 1.0.0"
+      "Aspose.Cells >= 24.1.0"
     ]
   },
   "packageFolders": {
@@ -712,11 +435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
-      "projectName": "OneVsAll",
-      "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
+      "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/NaiveBayes.csproj",
+      "projectName": "NaiveBayes",
+      "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/NaiveBayes.csproj",
       "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
-      "outputPath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/",
+      "outputPath": "/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
@@ -730,11 +453,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj": {
-              "projectPath": "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -750,14 +469,6 @@
           "Aspose.Cells": {
             "target": "Package",
             "version": "[24.1.0, )"
-          },
-          "Deedle": {
-            "target": "Package",
-            "version": "[3.0.0, )"
-          },
-          "Deedle.Math": {
-            "target": "Package",
-            "version": "[3.0.0, )"
           }
         },
         "imports": [

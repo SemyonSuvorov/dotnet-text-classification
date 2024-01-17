@@ -1,10 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogReg", "LogReg\LogReg.csproj", "{B8A5F757-C484-442A-ABB2-424D3E1BFABD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{B8A5F757-C484-442A-ABB2-424D3E1BFABD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneVsAll", "OneVsAll\OneVsAll.csproj", "{83929D08-2CBD-4398-BF47-4D8F4870C21B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextPreprocessing", "TextPreprocessing\TextPreprocessing.csproj", "{E1981C76-ADBC-4B15-AEDA-E3FB41A448F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveBayes", "NaiveBayes\NaiveBayes.csproj", "{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 		{E1981C76-ADBC-4B15-AEDA-E3FB41A448F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1981C76-ADBC-4B15-AEDA-E3FB41A448F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1981C76-ADBC-4B15-AEDA-E3FB41A448F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

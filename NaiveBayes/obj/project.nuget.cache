@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wl5ei78m2oxnC1hN/UM7b/NbALNc1kwvr134Vi9o0t5SmzUBsxuPHtixbG48cgw7KUCXzTj9clhKcJdvhwQu3A==",
+  "dgSpecHash": "QFOf8ad8upKA8QFHou4KvVtO9MMQirg51BQwbfXti3VD/ym4PP6hR/EEoTEN3OzCXsv30TF0doKsWH5UScPSsg==",
   "success": true,
-  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/OneVsAll.csproj",
+  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/NaiveBayes.csproj",
   "expectedPackageFiles": [
     "/Users/semyonsuvorov/.nuget/packages/aspose.cells/24.1.0/aspose.cells.24.1.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/deedle/3.0.0/deedle.3.0.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/deedle.math/3.0.0/deedle.math.3.0.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/fsharp.core/4.5.2/fsharp.core.4.5.2.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics/6.0.0-beta1/mathnet.numerics.6.0.0-beta1.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics.fsharp/4.15.0/mathnet.numerics.fsharp.4.15.0.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/skiasharp/2.88.6/skiasharp.2.88.6.nupkg.sha512",
     "/Users/semyonsuvorov/.nuget/packages/skiasharp.nativeassets.macos/2.88.6/skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
