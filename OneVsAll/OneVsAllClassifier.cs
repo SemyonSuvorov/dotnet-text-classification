@@ -38,15 +38,21 @@ public class OneVsAllClassifier
         _isTrained = true;
     }
 
-    public double[] PredictClassForSample(string input)
+    public int PredictClassForSample(string input)
     {
         if (!_isTrained) throw new Exception("Model is not trained");
         var probas = new double[4];
+        int predictedClass = 0;
+        double maxProba = double.MinValue;
         for (int i = 0; i < 4; i++)
         {
             probas[i] = _regressors[i].PredictProbaForOneSample(input, _p);
+            if (probas[i] > maxProba)
+            {
+                maxProba = probas[i];
+                predictedClass = i + 1;
+            }
         }
-
-        return probas;
+        return predictedClass;
     }
 }

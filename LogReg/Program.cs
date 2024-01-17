@@ -1,15 +1,30 @@
 ﻿using ClassLibrary;
+using Deedle;
 using Frame = Deedle.Frame;
 
-var toyFrame = Frame.ReadCsv("test.csv");
-var classifier = new OneVsAllClassifier(toyFrame, 100);
-classifier.Train(11);
-var result = classifier.PredictClassForSample("Indians Mount Charge,The Cleveland Indians pulled within one " +
-                                              "game of the AL Central lead by beating the Minnesota Twins, " +
-                                              "7-1, Saturday night with home runs by Travis Hafner and " +
-                                              "Victor Martinez.");
-foreach (var r in result)
+var frame = Frame.ReadCsv("test.csv");
+var trainRowIndices = new int[7000];
+for (int i = 0; i < 7000; i++)
 {
-    Console.WriteLine(r);
-} // 2
+    trainRowIndices[i] = i;
+}
+var trainFrame = frame.GetRows(trainRowIndices);
+
+var classifier = new OneVsAllClassifier(trainFrame, 100);
+classifier.Train(11);
+string input;
+do
+{
+    Console.WriteLine();
+    Console.WriteLine("What do you want to say ? (Type Q to Quit)");
+    input = Console.ReadLine()!;
+
+    // Get a prediction
+    var result = classifier.PredictClassForSample(input);
+    // Print classification
+    Console.WriteLine($"Predicted class: {(ArticleIntents)result}");
+    Console.WriteLine();
+}
+while (!string.IsNullOrWhiteSpace(input) && input.ToLowerInvariant() != "q");
+
                                                   
