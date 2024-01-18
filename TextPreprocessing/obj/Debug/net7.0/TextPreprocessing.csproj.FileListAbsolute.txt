@@ -13,3 +13,19 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/bin/Debug/net7.0/NaiveBayes.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/bin/Debug/net7.0/NaiveBayes.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/obj/Debug/net7.0/TextPreprocessing.csproj.CopyComplete
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\bin\Debug\net7.0\TextPreprocessing.deps.json
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\bin\Debug\net7.0\TextPreprocessing.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\bin\Debug\net7.0\TextPreprocessing.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\bin\Debug\net7.0\NaiveBayes.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\bin\Debug\net7.0\NaiveBayes.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.csproj.AssemblyReference.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.AssemblyInfoInputs.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.AssemblyInfo.cs
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.csproj.CoreCompileInputs.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.sourcelink.json
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.csproj.CopyComplete
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\refint\TextPreprocessing.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\TextPreprocessing.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\TextPreprocessing\obj\Debug\net7.0\ref\TextPreprocessing.dll

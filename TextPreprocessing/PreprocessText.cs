@@ -1,5 +1,4 @@
-﻿using System.Reflection.Metadata;
-using MathNet.Numerics.LinearAlgebra;
+﻿using MathNet.Numerics.LinearAlgebra;
 using System.Text.RegularExpressions;
 using Aspose.Cells;
 using Deedle;
@@ -7,7 +6,7 @@ using Deedle;
 
 namespace TextPreprocessing;
 
-public class PreprocessText
+public partial class PreprocessText
 {
     private int _numOfDocs;
     private Dictionary<string, double> _idfDict = new();
@@ -37,13 +36,12 @@ public class PreprocessText
         foreach (var token in tokens)
         {
             var loweredToken = token.ToLower();
-            var normalizedToken = Regex.Replace(loweredToken, 
-                "[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]", "")
+            var normalizedToken = MyRegex().Replace(loweredToken, "")
                 .Replace(@"\", "").Replace("\"","");
             
             if (_stopWordsList.Contains(normalizedToken)) continue;
             
-            if (tfDict.ContainsKey(normalizedToken)) tfDict[normalizedToken]++;
+            if (tfDict.TryGetValue(normalizedToken, out int value)) tfDict[normalizedToken] = ++value;
             
             else tfDict.TryAdd(normalizedToken, 1);
             
@@ -51,7 +49,7 @@ public class PreprocessText
         }
         foreach (var tok in listOfTokens)
         {
-            if (_dfDict.ContainsKey(tok)) _dfDict[tok]++;
+            if (_dfDict.TryGetValue(tok, out int value)) _dfDict[tok] = ++value;
             
             else _dfDict.TryAdd(tok, 1);
         }
@@ -71,14 +69,13 @@ public class PreprocessText
         foreach (var token in tokens)
         {
             var loweredToken = token.ToLower();
-            var normalizedToken = Regex.Replace(loweredToken, 
-                    "[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]", "")
-                .Replace(@"\", "").Replace("\"","");
-            
+            var normalizedToken = MyRegex().Replace(loweredToken, "")
+                .Replace(@"\", "").Replace("\"", "");
+
             if (_stopWordsList.Contains(normalizedToken)) continue;
             
-            if (tfDict.ContainsKey(normalizedToken) && _dfDict.ContainsKey(normalizedToken)) 
-                tfDict[normalizedToken]++;
+            if (tfDict.TryGetValue(normalizedToken, out int value) && _dfDict.ContainsKey(normalizedToken)) 
+                tfDict[normalizedToken] = ++value;
             
             else if(_dfDict.ContainsKey(normalizedToken)) tfDict.TryAdd(normalizedToken, 1);
             
@@ -87,8 +84,8 @@ public class PreprocessText
         var vector = new List<double>(_dfDict.Count);
         foreach (var key in _dfDict.Keys)
         {
-            if (!tfDict.ContainsKey(key)) vector.Add(0);
-            else vector.Add(tfDict[key] * _idfDict[key]);
+            if (!tfDict.TryGetValue(key, out int value)) vector.Add(0);
+            else vector.Add(value * _idfDict[key]);
         }
         //add bias term
         vector.Insert(0, 1);
@@ -96,10 +93,10 @@ public class PreprocessText
         return feature;
     }
 
-    public List<NaiveBayes.Document> CreateTrainCorpusFromXlsx(string filePath)
+    public static List<NaiveBayes.Document> CreateTrainCorpusFromXlsx(string filePath)
     {
         var trainCorpus = new List<NaiveBayes.Document> { new ("1", "2") };
-        var wb = new Workbook("TrainData.xlsx");
+        var wb = new Workbook(filePath);
 
         var worksheet = wb.Worksheets[0];
 
@@ -139,13 +136,13 @@ public class PreprocessText
             var tfidfVector = new List<double>(_dfDict.Count);
             foreach (var key in _dfDict.Keys)
             {
-                if (!tfdict.ContainsKey(key))
+                if (!tfdict.TryGetValue(key, out int value))
                 {
                     tfidfVector.Add(0);
                 }
                 else
                 {
-                    tfidfVector.Add(tfdict[key] * _idfDict[key]);
+                    tfidfVector.Add(value * _idfDict[key]);
                 }
             }
             Vector<double> vec = Vector<double>.Build.DenseOfEnumerable(tfidfVector);
@@ -160,4 +157,8 @@ public class PreprocessText
         Console.WriteLine("Done!");
         return featureMatrix;
     }
+
+    [GeneratedRegex("[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]")]
+    private static partial Regex MyRegex();
+
 }

@@ -15,3 +15,21 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/obj/Debug/net7.0/ref/OneVsAll.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/NaiveBayes.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/OneVsAll/bin/Debug/net7.0/NaiveBayes.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\OneVsAll.deps.json
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\OneVsAll.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\OneVsAll.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\NaiveBayes.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\TextPreprocessing.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\TextPreprocessing.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\bin\Debug\net7.0\NaiveBayes.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.csproj.AssemblyReference.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.AssemblyInfoInputs.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.AssemblyInfo.cs
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.csproj.CoreCompileInputs.cache
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.sourcelink.json
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.csproj.CopyComplete
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\refint\OneVsAll.dll
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\OneVsAll.pdb
+C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\OneVsAll\obj\Debug\net7.0\ref\OneVsAll.dll

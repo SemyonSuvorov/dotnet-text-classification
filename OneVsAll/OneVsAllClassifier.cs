@@ -7,7 +7,7 @@ namespace ClassLibrary;
 public class OneVsAllClassifier
 {
     private readonly Series<int, double> _yTrue;
-    private List<LogisticRegression> _regressors = new();
+    private readonly List<LogisticRegression> _regressors = new();
     private readonly PreprocessText _p = new();
     private readonly Matrix<double> _featureMatrix;
     private bool _isTrained;
@@ -37,6 +37,8 @@ public class OneVsAllClassifier
         Task.WaitAll(task1, task2, task3, task4);
         _isTrained = true;
         Console.WriteLine("Done!");
+        Console.WriteLine();
+
     }
 
     public int PredictClassForSample(string input)

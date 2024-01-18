@@ -9,11 +9,13 @@ public class NaiveBayesClassifier
     public NaiveBayesClassifier(List<Document> train)
     {
         Console.WriteLine("Training Naive Bayes...");
-        _classes = train.GroupBy(x => x.Label).Select(g => 
-            new ClassInfo(Convert.ToInt32(g.Key), g.Select(x => x.Text).ToList())).ToList();
+        _classes = train.GroupBy(x => x.Label)
+            .Select(g => new ClassInfo(Convert.ToInt32(g.Key), g.Select(x => x.Text).ToList()))
+            .ToList();
         _countOfDocs = train.Count;
         _uniqWordsCount = train.SelectMany(x => x.Text.Split(' ')).GroupBy(x => x).Count();
         Console.WriteLine("Done, ready to make predictions...");
+        Console.WriteLine();
     }
     public double PredictClass(string input)
     {

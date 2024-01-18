@@ -19,7 +19,6 @@ public class LogisticRegression
     public void Fit(Matrix<double> featureMatrix, Series<int,double> yTrue, int predictedClass, double learningRate)
     {
         //save target from dataframe
-        //predict class 1 as positive, others as negative
         var y = yTrue
             .Select(x => (int)x.Value == predictedClass ? 1.0 : 0.0).ToVector();
         

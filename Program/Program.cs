@@ -6,8 +6,7 @@ using TextPreprocessing;
 using Frame = Deedle.Frame;
 
 
-//load text for onevsall
-var p = new PreprocessText();
+//load text for one vs all
 var frame = Frame.ReadCsv("test.csv");
 var trainRowIndices = new int[7000];
 for (int i = 0; i < 7000; i++)
@@ -21,7 +20,7 @@ var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 100);
 oneVsAllClassifier.Train(11);
 
 //load text for naive bayes
-var trainCorpus = p.CreateTrainCorpusFromXlsx("TrainData.xlsx");
+var trainCorpus = PreprocessText.CreateTrainCorpusFromXlsx("TrainData.xlsx");
 var naiveBayesClassifier = new NaiveBayesClassifier(trainCorpus);
 
 while (true)
@@ -31,10 +30,12 @@ while (true)
         case 1:
             Misc.PredictOneVsAll(oneVsAllClassifier);
             Console.WriteLine("Finished!");
+            Console.WriteLine();
             break;
         case 2:
             Misc.PredictNaiveBayes(naiveBayesClassifier);
             Console.WriteLine("Finished!");
+            Console.WriteLine();
             break;
         default:
             Console.WriteLine("Bye!");

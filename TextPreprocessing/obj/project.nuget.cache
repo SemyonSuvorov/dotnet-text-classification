@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "pDbWyiEHvpr9VFOLvYzkF2jFBgiqMsJEVFcwoc27TLRvam/LRCdOMFQIZP67HUOdCxdInVG04AeI+X/K9YsZWA==",
+  "dgSpecHash": "P/A/5ulGxLIXbz8jTm35GNa5S4PK4q+Gj0VwWaYpReh05/cp9mpbif6G8ejxUX/tyM2tmVPpFdOUSvhCJrVNfA==",
   "success": true,
-  "projectFilePath": "/Users/semyonsuvorov/RiderProjects/LogReg/TextPreprocessing/TextPreprocessing.csproj",
+  "projectFilePath": "C:\\Users\\semen\\OneDrive\\Рабочий стол\\prog\\dotnet-text-classification\\TextPreprocessing\\TextPreprocessing.csproj",
   "expectedPackageFiles": [
-    "/Users/semyonsuvorov/.nuget/packages/aspose.cells/24.1.0/aspose.cells.24.1.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/deedle/3.0.0/deedle.3.0.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/fsharp.core/4.5.2/fsharp.core.4.5.2.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/mathnet.numerics/6.0.0-beta1/mathnet.numerics.6.0.0-beta1.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/skiasharp/2.88.6/skiasharp.2.88.6.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/skiasharp.nativeassets.macos/2.88.6/skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/skiasharp.nativeassets.win32/2.88.6/skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/system.formats.asn1/6.0.0/system.formats.asn1.6.0.0.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/system.security.cryptography.pkcs/6.0.3/system.security.cryptography.pkcs.6.0.3.nupkg.sha512",
-    "/Users/semyonsuvorov/.nuget/packages/system.text.encoding.codepages/4.7.0/system.text.encoding.codepages.4.7.0.nupkg.sha512"
+    "C:\\Users\\semen\\.nuget\\packages\\aspose.cells\\24.1.0\\aspose.cells.24.1.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\deedle\\3.0.0\\deedle.3.0.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\fsharp.core\\4.5.2\\fsharp.core.4.5.2.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\mathnet.numerics\\6.0.0-beta1\\mathnet.numerics.6.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.3\\system.security.cryptography.pkcs.6.0.3.nupkg.sha512",
+    "C:\\Users\\semen\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
