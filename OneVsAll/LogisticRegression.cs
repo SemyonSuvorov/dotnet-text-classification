@@ -37,7 +37,7 @@ public class LogisticRegression
         for (int i = 0; i < _maxIterations; i++)
         {
             if(i % 10 == 0) Console.WriteLine($"Regressor for {predictedClass} class, training progress: {i}%");
-            //count dot-product
+            //count predictions
             var yPred = (featureMatrix * _weights).Map(Sigmoid,Zeros.Include);
             var loss = ComputeLoss(y, yPred);
             losses.Add(loss);
@@ -55,7 +55,6 @@ public class LogisticRegression
         {
             throw new Exception($"Shape of feature vector must be equal to {_numOfFeatures}");
         }
-        //add bias term
         var yPred = Sigmoid(feature * _weights);
         return yPred;
     }
@@ -71,7 +70,6 @@ public class LogisticRegression
 
     private static double ComputeLoss(IEnumerable<double> yTrue, IList<double> yPred)
     {
-        //count loss for each value
         var a = yTrue.Select((t, i) => LogLoss(t, yPred[i])).ToList();
         return a.Sum();
     }

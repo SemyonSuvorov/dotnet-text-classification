@@ -18,7 +18,7 @@ public class Misc
 
     public static void PredictOneVsAll(OneVsAllClassifier oneVsAllClassifier)
     {
-        string input;
+        string? input;
         do
         {
             Console.WriteLine();

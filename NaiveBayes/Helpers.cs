@@ -8,4 +8,5 @@ public static class Helpers
     {
         return Regex.Replace(text, "\\p{P}+", "").Split(' ').ToList();
     }
+
 }

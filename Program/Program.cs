@@ -17,7 +17,7 @@ var trainFrame = frame.GetRows(trainRowIndices);
 
 
 var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 100);
-oneVsAllClassifier.Train(11);
+oneVsAllClassifier.Train(12);
 
 //load text for naive bayes
 var trainCorpus = PreprocessText.CreateTrainCorpusFromXlsx("TrainData.xlsx");
