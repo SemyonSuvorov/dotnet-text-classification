@@ -26,9 +26,9 @@ public static class Misc
             var input = Console.ReadLine()!;
             if (input.ToLowerInvariant() == "q" || string.IsNullOrWhiteSpace(input)) break;
             // Get a prediction
-            var result = kmeans.PredictCluster(input);
+            var result = kmeans.ClassifyString(input);
             // Print classification
-            Console.WriteLine($"Predicted class: {result}");
+            Console.WriteLine($"Predicted cluster: {result}");
             Console.WriteLine();
         }
         while (true);

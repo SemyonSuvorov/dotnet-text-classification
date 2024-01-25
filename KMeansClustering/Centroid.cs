@@ -1,61 +1,86 @@
-using MathNet.Numerics.LinearAlgebra;
-using MathNet.Numerics.Statistics;
-
 namespace KMeans;
 
-public static class Centroid
+public class Centroid
 {
     private static readonly Random Random = new();
-    private static List<int> _centroidsIndexes = new();
+    public double[] Array{get; private set;}
+
     
-    public static Matrix<double> CreateCentroids(Matrix<double> dataset, int k)
-    {
-        var result = Matrix<double>.Build.Dense(k, dataset.ColumnCount);
-        for (int i = 0; i < k; i++)
-        {
-            result.SetRow(i, RandomPoint(dataset));
-        }
+    private List<double[]> _oldPointsList;
 
-        return result;
-    }
-    private static Vector<double> MeanPoint(Matrix<double> points)
+    private readonly List<double[]> _closestPointsList;
+    public void AddPoint(double[] closestArray)
     {
-        var result = Vector<double>.Build.Dense(points.ColumnCount);
-        for (int i = 0; i < points.ColumnCount; i++)
-        {
-            result[i] = points.Column(i).Mean();
-        }
-
-        return result;
+        _closestPointsList.Add(closestArray);
     }
 
-    public static Matrix<double> UpdateCentroids(Matrix<double> dataset, Vector<double> assigments, int k)
+    public Centroid(double[][] dataSet)
     {
-        var clusterInds = assigments.Distinct().ToList();
-        var newCentroids = Matrix<double>.Build
-            .Dense(assigments.Distinct().Count(), dataset.ColumnCount);
-        var assigmentsDataset = dataset.InsertColumn(dataset.ColumnCount, assigments).ToRowArrays();
-        for (var clusterIndex = 0; clusterIndex < clusterInds.Count; clusterIndex++)
+
+        List<Tuple<double, double>> minMaxPoints = Misc.GetMinMaxPoints(dataSet);
+
+        Array = new double[minMaxPoints.Count];
+        int i = 0;
+        foreach (Tuple<double, double> tuple in minMaxPoints)
         {
-            var clusterPoints = assigmentsDataset
-                .Where(row => (int)row[^1] == clusterInds[clusterIndex]);
-            var m = Matrix<double>.Build
-                .DenseOfRowArrays(clusterPoints).RemoveColumn(dataset.ColumnCount);
-            var newCentroid = MeanPoint(m);
-            newCentroids.SetRow(clusterIndex, newCentroid);
+            double minimum = tuple.Item1;
+            double maximum = tuple.Item2;
+            double element = Random.NextDouble() * (maximum - minimum) + minimum;
+            Array[i] = element;
+            i++;
         }
-        return newCentroids;
+
+        _oldPointsList = new List<double[]>();
+        _closestPointsList = new List<double[]>();
     }
-    
-    private static Vector<double> RandomPoint(Matrix<double> points)
+
+    public void MoveCentroid()
     {
-        var index = Random.Next(0, points.RowCount);
-        while (_centroidsIndexes.Contains(index))
+        var resultVector = new List<double>();
+
+        if (_closestPointsList.Count == 0) return;
+
+        for (int j = 0; j < _closestPointsList[0].GetLength(0); j++)
         {
-            index = Random.Next(0, points.RowCount);
+            double sum = 0.0;
+            for (int i = 0; i < _closestPointsList.Count; i++)
+            {
+                sum += _closestPointsList[i][j];
+            }
+            sum /= _closestPointsList.Count;
+            resultVector.Add(sum);
         }
-        _centroidsIndexes.Add(index);
-        var randomPoint = points.Row(index);
-        return randomPoint;
+
+        Array = resultVector.ToArray();
     }
+
+    public bool HasChanged()
+    {
+        bool result = true;
+
+        if (_oldPointsList.Count != _closestPointsList.Count) return true;
+        if (_oldPointsList.Count == 0 || _closestPointsList.Count == 0) return false;
+
+        for (int i = 0; i < _closestPointsList.Count; i++)
+        {
+            double[] oldPoit = _oldPointsList[i];
+            double[] currentPoint = _closestPointsList[i];
+
+            for (int j = 0; j < oldPoit.Length; j++)
+                if (oldPoit[j] != currentPoint[j])
+                {
+                    result = false;
+                    break;
+                }
+        }
+
+        return !result;
+    }
+
+    public void Reset()
+    {
+        _oldPointsList = Misc.Clone(_closestPointsList);
+        _closestPointsList.Clear();
+    }
+
 }

@@ -2,6 +2,8 @@
 using System.Text.RegularExpressions;
 using Aspose.Cells;
 using Deedle;
+using static Microsoft.FSharp.Core.ByRefKinds;
+using System.Globalization;
 
 
 namespace TextPreprocessing;
@@ -12,7 +14,9 @@ public static partial class PreprocessText
     private static Dictionary<string, double> _idfDict = new();
     private static readonly Dictionary<string, int> DfDict = new();
     private static readonly List<string> StopWordsList = new();
-    private static Matrix<double> _featureMatrix;
+    private static Matrix<double>? _featureMatrix;
+    private static Matrix<double>? _kMeansFeatureMatrix;
+    private static Dictionary<string, int> _kMeansWordFreqDict = new();
 
     static PreprocessText()
     {
@@ -63,7 +67,7 @@ public static partial class PreprocessText
         return DfDict.ToDictionary(pair => pair.Key, pair => Math.Log(_numOfDocs / pair.Value));
     }
 
-    public static Vector<double> VectorizeOneFeature(string input, string algotype)
+    public static Vector<double> VectorizeOneFeature(string input)
     {
         var tokens = input.Split(" ").ToList();
         var tfDict = new Dictionary<string, int>();
@@ -90,7 +94,6 @@ public static partial class PreprocessText
             else vector.Add(value * _idfDict[key]);
         }
 
-        if (algotype == "kmeans") return Vector<double>.Build.DenseOfEnumerable(vector);
         //add bias term
         vector.Insert(0, 1);
         var feature = Vector<double>.Build.DenseOfEnumerable(vector);
@@ -159,11 +162,106 @@ public static partial class PreprocessText
         return featureMatrix;
     }
 
-    public static Matrix<double> GetFeaturesForKMeans()
+    public static Matrix<double> GetFeaturesForKMeans(Frame<int, string> df)
     {
-        return _featureMatrix;
-    }
+        var header = df.GetColumn<string>("Header").Values.ToList();
+        var description = df.GetColumn<string>("Description").Values.ToList();
+        var concatedFeatures = new string[header.Count];
+        for (var i = 0; i < header.Count; i++)
+        {
+            concatedFeatures[i] = header[i] + " " + description[i];
+        }
 
+        var wordFrequencyDictionary = new Dictionary<string, int>();
+
+        foreach (var item in concatedFeatures)
+        {
+            var tokens = item.Split(" ");
+
+            foreach (string token in tokens)
+            {
+                var loweredToken = token.ToLower();
+                var normalizedToken = MyRegex().Replace(loweredToken, "")
+                    .Replace(@"\", "").Replace("\"", "");
+
+                if (StopWordsList.Contains(normalizedToken)) continue;
+                if (wordFrequencyDictionary.ContainsKey(normalizedToken))
+                {
+                    wordFrequencyDictionary[normalizedToken] += 1;
+                }
+                else
+                {
+                    wordFrequencyDictionary[normalizedToken] = 1;
+                }
+            }
+        }
+        wordFrequencyDictionary = (from entry in wordFrequencyDictionary orderby entry.Value descending select entry)
+            .Where(pair => pair.Value > 30)
+            .ToDictionary(pair => pair.Key, pair => pair.Value);
+        _kMeansWordFreqDict = wordFrequencyDictionary;
+        var featureMatrix = Matrix<double>.Build.Dense(concatedFeatures.Length, wordFrequencyDictionary.Count);
+
+        int itemIndex = 0;
+        foreach (var item in concatedFeatures)
+        {
+            var localFrequency = new Dictionary<string, int>();
+            var tokens = item.Split(" ");
+
+            foreach (string token in tokens)
+            {
+                var loweredToken = token.ToLower();
+                var normalizedToken = MyRegex().Replace(loweredToken, "")
+                    .Replace(@"\", "").Replace("\"", "");
+
+                if (StopWordsList.Contains(normalizedToken)) continue;
+                if (!localFrequency.ContainsKey(normalizedToken))
+                    localFrequency[normalizedToken] = 1;
+
+            }
+            double[] inputVector = new double[wordFrequencyDictionary.Count];
+
+            foreach (KeyValuePair<string, int> pair in localFrequency)
+            {
+                if (wordFrequencyDictionary.ContainsKey(pair.Key))
+                {
+                    int index = wordFrequencyDictionary.Keys.ToList().IndexOf(pair.Key);
+                    inputVector[index] = pair.Value;
+                }
+            }
+            featureMatrix.SetRow(itemIndex, inputVector);
+            itemIndex++;
+        }
+        _kMeansFeatureMatrix = featureMatrix;
+        return featureMatrix;
+    }
+    public static double[] VectorizeOneFeatureKMeans(string input)
+    {
+        var localFrequency = new Dictionary<string, int>();
+        var tokens = input.Split(" ");
+
+        foreach (string token in tokens)
+        {
+            var loweredToken = token.ToLower();
+            var normalizedToken = MyRegex().Replace(loweredToken, "")
+                .Replace(@"\", "").Replace("\"", "");
+
+            if (StopWordsList.Contains(normalizedToken)) continue;
+            if (!localFrequency.ContainsKey(normalizedToken))
+                localFrequency[normalizedToken] = 1;
+        }
+        double[] inputVector = new double[_kMeansWordFreqDict.Count];
+
+        foreach (var pair in localFrequency)
+        {
+            if (_kMeansWordFreqDict.ContainsKey(pair.Key))
+            {
+                int index = _kMeansWordFreqDict.Keys.ToList().IndexOf(pair.Key);
+                inputVector[index] = pair.Value;
+            }
+        }
+        return inputVector;
+
+    }
     [GeneratedRegex("[-.?!)(,:0123456789/\t\n$%^*}{#@<>'['~;@]")]
     private static partial Regex MyRegex();
 

@@ -20,7 +20,7 @@ var trainFrame = frame.GetRows(trainRowIndices);
 var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 1);
 oneVsAllClassifier.Train(12);
 
-var kmeans = new KMeans.KMeans(trainFrame,4);
+var kmeans = new KMeans.KMeans(trainFrame, 4);
 
 //load text for naive bayes
 var trainCorpus = PreprocessText.CreateTrainCorpusFromXlsx("TrainData.xlsx");
