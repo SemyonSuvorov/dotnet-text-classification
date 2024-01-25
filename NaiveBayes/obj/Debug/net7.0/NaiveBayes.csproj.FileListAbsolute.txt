@@ -10,16 +10,28 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/refint/NaiveBayes.dll
 /Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/NaiveBayes.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/NaiveBayes/obj/Debug/net7.0/ref/NaiveBayes.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\bin\Debug\net7.0\NaiveBayes.deps.json
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\bin\Debug\net7.0\NaiveBayes.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\bin\Debug\net7.0\NaiveBayes.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.csproj.AssemblyReference.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.AssemblyInfoInputs.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.AssemblyInfo.cs
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.csproj.CoreCompileInputs.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.sourcelink.json
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\refint\NaiveBayes.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\NaiveBayes.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\NaiveBayes\obj\Debug\net7.0\ref\NaiveBayes.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.deps.json
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.AssemblyReference.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfoInputs.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfo.cs
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.CoreCompileInputs.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.sourcelink.json
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/refint/NaiveBayes.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/ref/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.deps.json
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/bin/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/refint/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/Debug/net7.0/ref/NaiveBayes.dll

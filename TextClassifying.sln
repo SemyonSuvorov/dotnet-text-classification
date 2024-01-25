@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextPreprocessing", "TextPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaiveBayes", "NaiveBayes\NaiveBayes.csproj", "{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMeansClustering", "KMeansClustering\KMeansClustering.csproj", "{F48D000C-3853-4E43-AD74-760F588C7F8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A457BEB7-A8C1-414A-BCFC-6623BB2FF028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48D000C-3853-4E43-AD74-760F588C7F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48D000C-3853-4E43-AD74-760F588C7F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48D000C-3853-4E43-AD74-760F588C7F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48D000C-3853-4E43-AD74-760F588C7F8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

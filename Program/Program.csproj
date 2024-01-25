@@ -9,6 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\KMeansClustering\KMeansClustering.csproj" />
       <ProjectReference Include="..\NaiveBayes\NaiveBayes.csproj" />
       <ProjectReference Include="..\OneVsAll\OneVsAll.csproj" />
       <ProjectReference Include="..\TextPreprocessing\TextPreprocessing.csproj" />

@@ -47,53 +47,104 @@
 /Users/semyonsuvorov/RiderProjects/LogReg/Program/obj/Debug/net7.0/Program.pdb
 /Users/semyonsuvorov/RiderProjects/LogReg/Program/obj/Debug/net7.0/Program.genruntimeconfig.cache
 /Users/semyonsuvorov/RiderProjects/LogReg/Program/obj/Debug/net7.0/ref/Program.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Program.exe
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Program.deps.json
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Program.runtimeconfig.json
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Program.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Program.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Aspose.Cells.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Deedle.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\Deedle.Math.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\FSharp.Core.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\MathNet.Numerics.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\MathNet.Numerics.FSharp.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\SkiaSharp.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\cs\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\de\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\en\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\es\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\fr\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\it\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\ja\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\ko\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\pl\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\pt-BR\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\ru\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\tr\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\zh-Hans\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\zh-Hant\FSharp.Core.resources.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\runtimes\osx\native\libSkiaSharp.dylib
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\runtimes\win-arm64\native\libSkiaSharp.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\runtimes\win-x64\native\libSkiaSharp.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\NaiveBayes.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\OneVsAll.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\TextPreprocessing.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\NaiveBayes.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\OneVsAll.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\bin\Debug\net7.0\TextPreprocessing.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.csproj.AssemblyReference.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.AssemblyInfoInputs.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.AssemblyInfo.cs
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.csproj.CoreCompileInputs.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.sourcelink.json
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.csproj.CopyComplete
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\refint\Program.dll
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.pdb
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\Program.genruntimeconfig.cache
-C:\Users\semen\OneDrive\Рабочий стол\prog\dotnet-text-classification\Program\obj\Debug\net7.0\ref\Program.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Program.exe
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Program.deps.json
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Program.runtimeconfig.json
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Program.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Program.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Aspose.Cells.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Deedle.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/Deedle.Math.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/FSharp.Core.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/MathNet.Numerics.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/MathNet.Numerics.FSharp.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/SkiaSharp.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/cs/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/de/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/en/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/es/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/fr/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/it/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/ja/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/ko/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/pl/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/pt-BR/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/ru/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/tr/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/zh-Hans/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/zh-Hant/FSharp.Core.resources.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/osx/native/libSkiaSharp.dylib
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-arm64/native/libSkiaSharp.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-x64/native/libSkiaSharp.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-x86/native/libSkiaSharp.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/NaiveBayes.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/OneVsAll.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/TextPreprocessing.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/NaiveBayes.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/OneVsAll.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/bin/Debug/net7.0/TextPreprocessing.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.AssemblyReference.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.AssemblyInfoInputs.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.AssemblyInfo.cs
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.CoreCompileInputs.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.sourcelink.json
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.CopyComplete
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/refint/Program.dll
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.pdb
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/Program.genruntimeconfig.cache
+C:/Users/semen/OneDrive/Рабочий стол/prog/dotnet-text-classification/Program/obj/Debug/net7.0/ref/Program.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Program
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Program.deps.json
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Program.runtimeconfig.json
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Program.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Program.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Aspose.Cells.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Deedle.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/Deedle.Math.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/FSharp.Core.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/MathNet.Numerics.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/MathNet.Numerics.FSharp.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/SkiaSharp.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/cs/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/de/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/en/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/es/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/fr/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/it/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/ja/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/ko/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/pl/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/pt-BR/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/ru/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/tr/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/zh-Hans/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/zh-Hant/FSharp.Core.resources.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/osx/native/libSkiaSharp.dylib
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-arm64/native/libSkiaSharp.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-x64/native/libSkiaSharp.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win-x86/native/libSkiaSharp.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/OneVsAll.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/TextPreprocessing.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/OneVsAll.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/TextPreprocessing.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.csproj.CopyComplete
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/refint/Program.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/Program.genruntimeconfig.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/obj/Debug/net7.0/ref/Program.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/KMeansClustering.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/Program/bin/Debug/net7.0/KMeansClustering.pdb

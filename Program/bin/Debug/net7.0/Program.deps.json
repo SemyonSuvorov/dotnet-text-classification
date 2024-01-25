@@ -11,6 +11,7 @@
           "Aspose.Cells": "24.1.0",
           "Deedle": "3.0.0",
           "Deedle.Math": "3.0.0",
+          "KMeansClustering": "1.0.0",
           "NaiveBayes": "1.0.0",
           "OneVsAll": "1.0.0",
           "TextPreprocessing": "1.0.0"
@@ -194,6 +195,17 @@
           "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
+      "KMeansClustering/1.0.0": {
+        "dependencies": {
+          "Deedle.Math": "3.0.0",
+          "MathNet.Numerics": "6.0.0-beta1",
+          "OneVsAll": "1.0.0",
+          "TextPreprocessing": "1.0.0"
+        },
+        "runtime": {
+          "KMeansClustering.dll": {}
+        }
+      },
       "NaiveBayes/1.0.0": {
         "dependencies": {
           "Aspose.Cells": "24.1.0"
@@ -322,6 +334,11 @@
       "sha512": "sha512-aeu4FlaUTemuT1qOd1MyU4T516QR4Fy+9yDbwWMPHOHy7U8FD6SgTzdZFO7gHcfAPHtECqInbwklVvUK4RHcNg==",
       "path": "system.text.encoding.codepages/4.7.0",
       "hashPath": "system.text.encoding.codepages.4.7.0.nupkg.sha512"
+    },
+    "KMeansClustering/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "NaiveBayes/1.0.0": {
       "type": "project",

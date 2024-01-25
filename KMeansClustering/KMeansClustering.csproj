@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>KMeans</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Deedle.Math" Version="3.0.0" />
+      <PackageReference Include="MathNet.Numerics" Version="6.0.0-beta1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OneVsAll\OneVsAll.csproj" />
+      <ProjectReference Include="..\TextPreprocessing\TextPreprocessing.csproj" />
+    </ItemGroup>
+
+</Project>

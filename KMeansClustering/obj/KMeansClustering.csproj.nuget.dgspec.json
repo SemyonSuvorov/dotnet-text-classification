@@ -1,0 +1,279 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeansClustering/KMeansClustering.csproj": {}
+  },
+  "projects": {
+    "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeansClustering/KMeansClustering.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeansClustering/KMeansClustering.csproj",
+        "projectName": "KMeansClustering",
+        "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeansClustering/KMeansClustering.csproj",
+        "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
+        "outputPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeansClustering/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/OneVsAll.csproj": {
+                "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/OneVsAll.csproj"
+              },
+              "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj": {
+                "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Deedle.Math": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[6.0.0-beta1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/semyonsuvorov/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/NaiveBayes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/NaiveBayes.csproj",
+        "projectName": "NaiveBayes",
+        "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/NaiveBayes.csproj",
+        "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
+        "outputPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[24.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/semyonsuvorov/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/OneVsAll.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/OneVsAll.csproj",
+        "projectName": "OneVsAll",
+        "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/OneVsAll.csproj",
+        "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
+        "outputPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/OneVsAll/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj": {
+                "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[24.1.0, )"
+            },
+            "Deedle": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Deedle.Math": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/semyonsuvorov/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj",
+        "projectName": "TextPreprocessing",
+        "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/TextPreprocessing.csproj",
+        "packagesPath": "/Users/semyonsuvorov/.nuget/packages/",
+        "outputPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/TextPreprocessing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/semyonsuvorov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/NaiveBayes.csproj": {
+                "projectPath": "/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/NaiveBayes/NaiveBayes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[24.1.0, )"
+            },
+            "Deedle": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[6.0.0-beta1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/semyonsuvorov/.dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

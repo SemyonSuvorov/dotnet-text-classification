@@ -1,14 +1,14 @@
+using ClassLibrary;
 using Deedle;
 using MathNet.Numerics.LinearAlgebra;
 using TextPreprocessing;
 
-namespace ClassLibrary;
+namespace OneVsAll;
 
 public class OneVsAllClassifier
 {
-    private readonly Series<int, double> _yTrue;
+    public static Series<int, double> _yTrue;
     private readonly List<LogisticRegression> _regressors = new();
-    private readonly PreprocessText _p = new();
     private readonly Matrix<double> _featureMatrix;
     private bool _isTrained;
     
@@ -24,7 +24,7 @@ public class OneVsAllClassifier
         }
         //drop target and vectorize features
         trainDf.DropColumn("Target");
-        _featureMatrix = _p.VectorizeFeatures(trainDf);
+        _featureMatrix = PreprocessText.VectorizeFeaturesOneVsAll(trainDf);
     }
 
     public void Train(double learningRate)
@@ -49,7 +49,7 @@ public class OneVsAllClassifier
         var maxProba = double.MinValue;
         for (var i = 0; i < 4; i++)
         {
-            probas[i] = _regressors[i].PredictProbaForOneSample(input, _p);
+            probas[i] = _regressors[i].PredictProbaForOneSample(input);
             if (!(probas[i] > maxProba)) continue;
             maxProba = probas[i];
             predictedClass = i + 1;

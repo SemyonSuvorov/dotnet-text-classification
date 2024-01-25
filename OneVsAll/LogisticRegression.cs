@@ -46,10 +46,10 @@ public class LogisticRegression
         Console.WriteLine($"LogLoss for {predictedClass} class: {losses.First()} -> {losses.Last()}");
     }
 
-    public double PredictProbaForOneSample(string input, PreprocessText p)
+    public double PredictProbaForOneSample(string input)
     {
         //vectorize input
-        var feature = p.VectorizeOneFeature(input);
+        var feature = PreprocessText.VectorizeOneFeature(input, "onevsall");
         //check shapes
         if (feature.Count != _numOfFeatures)
         {

@@ -1,0 +1,17 @@
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/KMeans.deps.json
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/KMeans.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/KMeans.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/NaiveBayes.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/TextPreprocessing.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/TextPreprocessing.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/bin/Debug/net7.0/NaiveBayes.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.csproj.AssemblyReference.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.GeneratedMSBuildEditorConfig.editorconfig
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.AssemblyInfoInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.AssemblyInfo.cs
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.csproj.CoreCompileInputs.cache
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.csproj.CopyComplete
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/refint/KMeans.dll
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/KMeans.pdb
+/Users/semyonsuvorov/RiderProjects/dotnet-text-classification/KMeans/obj/Debug/net7.0/ref/KMeans.dll
