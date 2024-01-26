@@ -2,8 +2,6 @@
 using System.Text.RegularExpressions;
 using Aspose.Cells;
 using Deedle;
-using static Microsoft.FSharp.Core.ByRefKinds;
-using System.Globalization;
 
 
 namespace TextPreprocessing;

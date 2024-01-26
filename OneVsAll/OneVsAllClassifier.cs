@@ -7,7 +7,7 @@ namespace OneVsAll;
 
 public class OneVsAllClassifier
 {
-    public static Series<int, double> _yTrue;
+    private static Series<int, double> _yTrue;
     private readonly List<LogisticRegression> _regressors = new();
     private readonly Matrix<double> _featureMatrix;
     private bool _isTrained;

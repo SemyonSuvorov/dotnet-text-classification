@@ -8,15 +8,15 @@ using Frame = Deedle.Frame;
 
 //load text for one vs all
 var frame = Frame.ReadCsv("test.csv");
-var trainRowIndices = new int[100];
-for (var i = 0; i < 100; i++)
+var trainRowIndices = new int[7000];
+for (var i = 0; i < 7000; i++)
 {
     trainRowIndices[i] = i;
 }
 var trainFrame = frame.GetRows(trainRowIndices);
 
 
-var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 1);
+var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 100);
 oneVsAllClassifier.Train(12);
 
 var kmeansData = Frame.ReadCsv("data_for_kmeans.csv");
