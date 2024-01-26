@@ -1,5 +1,4 @@
-﻿using ClassLibrary;
-using OneVsAll;
+﻿using OneVsAll;
 using NaiveBayes;
 using Deedle;
 using LogReg;
@@ -9,18 +8,19 @@ using Frame = Deedle.Frame;
 
 //load text for one vs all
 var frame = Frame.ReadCsv("test.csv");
-var trainRowIndices = new int[7000];
-for (var i = 0; i < 7000; i++)
+var trainRowIndices = new int[100];
+for (var i = 0; i < 100; i++)
 {
     trainRowIndices[i] = i;
 }
 var trainFrame = frame.GetRows(trainRowIndices);
 
 
-var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 100);
+var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 1);
 oneVsAllClassifier.Train(12);
 
-var kmeans = new KMeans.KMeans(trainFrame, 4);
+var kmeansData = Frame.ReadCsv("data_for_kmeans.csv");
+var kmeans = new KMeans.KMeans(kmeansData, 3);
 
 //load text for naive bayes
 var trainCorpus = PreprocessText.CreateTrainCorpusFromXlsx("TrainData.xlsx");

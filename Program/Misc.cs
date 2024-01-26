@@ -1,6 +1,7 @@
 using ClassLibrary;
 using OneVsAll;
 using NaiveBayes;
+using KMeans;
 
 namespace LogReg;
 
@@ -28,7 +29,7 @@ public static class Misc
             // Get a prediction
             var result = kmeans.ClassifyString(input);
             // Print classification
-            Console.WriteLine($"Predicted cluster: {(ArticleIntents)result}");
+            Console.WriteLine($"Predicted cluster: {(ClusterIntents)result}");
             Console.WriteLine();
         }
         while (true);

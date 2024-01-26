@@ -1,7 +1,6 @@
 ﻿using Deedle;
 using MathNet.Numerics.LinearAlgebra;
 using Deedle.Math;
-using OneVsAll;
 using TextPreprocessing;
 using System.Data;
 
@@ -19,8 +18,10 @@ public class KMeans
     public KMeans(Frame<int, string> trainDf, int k)
     {
         _k = k;
-        _yTrue = OneVsAllClassifier._yTrue.ToVector().ToArray();
-        _dataSet = PreprocessText.GetFeaturesForKMeans(trainDf).ToRowArrays();
+        _yTrue = trainDf.Columns["Target"]
+            .Select(x => Convert.ToDouble(x.Value)).ToVector().ToArray();
+        trainDf.DropColumn("Target");
+        _dataSet = PreprocessText.GetFeaturesForKMeans(trainDf);
         _centroidList = new List<Centroid>();
         _assigments = new double[_yTrue.Length];
         CreateCentroids();
@@ -76,7 +77,7 @@ public class KMeans
                 break;
             }
 
-            
+
         }
         AssignPoints();
         Console.WriteLine("Done!");
@@ -131,7 +132,7 @@ public class KMeans
         var s = Vector<double>.Build.DenseOfArray(_assigments);
         var temp = Matrix<double>.Build
             .DenseOfColumns(new IEnumerable<double>[] { _assigments, _yTrue }).ToRowArrays();
-        var filteredMatrix = temp.Where(row => (int)row[0] == (int)cluster);
+        var filteredMatrix = temp.Where(row => (int)row[0] == cluster);
         var tempMat = Matrix<double>.Build.DenseOfRowArrays(filteredMatrix);
         return tempMat.Column(1).ToList().GroupBy(x => x).MaxBy(x => x.Count())!.Key;
     }

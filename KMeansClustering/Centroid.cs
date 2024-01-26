@@ -7,7 +7,7 @@ public class Centroid
   
     private List<double[]> _oldPointsList;
 
-    private readonly List<double[]> _closestPointsList;
+    public readonly List<double[]> _closestPointsList;
     public void AddPoint(double[] closestArray)
     {
         _closestPointsList.Add(closestArray);
@@ -15,7 +15,6 @@ public class Centroid
 
     public Centroid(double[][] dataSet)
     {
-
         List<Tuple<double, double>> minMaxPoints = Misc.GetMinMaxPoints(dataSet);
 
         Array = new double[minMaxPoints.Count];
@@ -28,7 +27,7 @@ public class Centroid
             Array[i] = element;
             i++;
         }
-
+        
         _oldPointsList = new List<double[]>();
         _closestPointsList = new List<double[]>();
     }

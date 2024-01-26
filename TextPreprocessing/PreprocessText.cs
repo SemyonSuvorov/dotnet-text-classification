@@ -162,19 +162,13 @@ public static partial class PreprocessText
         return featureMatrix;
     }
 
-    public static Matrix<double> GetFeaturesForKMeans(Frame<int, string> df)
+    public static double[][] GetFeaturesForKMeans(Frame<int, string> df)
     {
-        var header = df.GetColumn<string>("Header").Values.ToList();
-        var description = df.GetColumn<string>("Description").Values.ToList();
-        var concatedFeatures = new string[header.Count];
-        for (var i = 0; i < header.Count; i++)
-        {
-            concatedFeatures[i] = header[i] + " " + description[i];
-        }
+        var samples = df.GetColumn<string>("Text").Values.ToArray();
 
         var wordFrequencyDictionary = new Dictionary<string, int>();
 
-        foreach (var item in concatedFeatures)
+        foreach (var item in samples)
         {
             var tokens = item.Split(" ");
 
@@ -196,13 +190,13 @@ public static partial class PreprocessText
             }
         }
         wordFrequencyDictionary = (from entry in wordFrequencyDictionary orderby entry.Value descending select entry)
-            .Where(pair => pair.Value > 50)
+            .Where(pair => pair.Value > 9)
             .ToDictionary(pair => pair.Key, pair => pair.Value);
         _kMeansWordFreqDict = wordFrequencyDictionary;
-        var featureMatrix = Matrix<double>.Build.Dense(concatedFeatures.Length, wordFrequencyDictionary.Count);
+        var featureMatrix = Matrix<double>.Build.Dense(samples.Length, wordFrequencyDictionary.Count);
 
         int itemIndex = 0;
-        foreach (var item in concatedFeatures)
+        foreach (var item in samples)
         {
             var localFrequency = new Dictionary<string, int>();
             var tokens = item.Split(" ");
@@ -232,7 +226,7 @@ public static partial class PreprocessText
             itemIndex++;
         }
         _kMeansFeatureMatrix = featureMatrix;
-        return featureMatrix;
+        return featureMatrix.ToRowArrays();
     }
     public static double[] VectorizeOneFeatureKMeans(string input)
     {
