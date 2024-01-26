@@ -49,7 +49,7 @@ public class LogisticRegression
     public double PredictProbaForOneSample(string input)
     {
         //vectorize input
-        var feature = PreprocessText.VectorizeOneFeature(input, "onevsall");
+        var feature = PreprocessText.VectorizeOneFeature(input);
         //check shapes
         if (feature.Count != _numOfFeatures)
         {

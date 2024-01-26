@@ -17,7 +17,7 @@ for (var i = 0; i < 7000; i++)
 var trainFrame = frame.GetRows(trainRowIndices);
 
 
-var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 1);
+var oneVsAllClassifier = new OneVsAllClassifier(trainFrame, 100);
 oneVsAllClassifier.Train(12);
 
 var kmeans = new KMeans.KMeans(trainFrame, 4);

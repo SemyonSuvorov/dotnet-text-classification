@@ -30,11 +30,10 @@ public class OneVsAllClassifier
     public void Train(double learningRate)
     {
         Console.WriteLine("Started training...");
-        Task task1 = Task.Run(() => _regressors[0].Fit(_featureMatrix, _yTrue, 1, learningRate));
-        Task task2 = Task.Run(() => _regressors[1].Fit(_featureMatrix, _yTrue, 2, learningRate));
-        Task task3 = Task.Run(() => _regressors[2].Fit(_featureMatrix, _yTrue, 3, learningRate));
-        Task task4 = Task.Run(() => _regressors[3].Fit(_featureMatrix, _yTrue, 4, learningRate));
-        Task.WaitAll(task1, task2, task3, task4);
+        Parallel.For(0, _regressors.Count, i =>
+        {
+            _regressors[i].Fit(_featureMatrix, _yTrue, (i + 1), learningRate);
+        });
         _isTrained = true;
         Console.WriteLine("Done!");
         Console.WriteLine();

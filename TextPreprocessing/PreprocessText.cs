@@ -196,7 +196,7 @@ public static partial class PreprocessText
             }
         }
         wordFrequencyDictionary = (from entry in wordFrequencyDictionary orderby entry.Value descending select entry)
-            .Where(pair => pair.Value > 30)
+            .Where(pair => pair.Value > 50)
             .ToDictionary(pair => pair.Key, pair => pair.Value);
         _kMeansWordFreqDict = wordFrequencyDictionary;
         var featureMatrix = Matrix<double>.Build.Dense(concatedFeatures.Length, wordFrequencyDictionary.Count);

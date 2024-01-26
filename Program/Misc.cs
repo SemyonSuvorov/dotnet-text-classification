@@ -28,7 +28,7 @@ public static class Misc
             // Get a prediction
             var result = kmeans.ClassifyString(input);
             // Print classification
-            Console.WriteLine($"Predicted cluster: {result}");
+            Console.WriteLine($"Predicted cluster: {(ArticleIntents)result}");
             Console.WriteLine();
         }
         while (true);

@@ -43,7 +43,7 @@ public class KMeans
             {
                 double[] point = _dataSet[i];
                 int closestIndex = -1;
-                double minDistance = Double.MaxValue;
+                double minDistance = double.MaxValue;
                 for (int k = 0; k < _centroidList.Count; k++)
                 {
                     double distance = EuclideanDistance(_centroidList[k].Array, point);
@@ -70,12 +70,13 @@ public class KMeans
                     break;
                 }
             }
-            
+
             if (!hasChanged)
             {
                 break;
             }
 
+            
         }
         AssignPoints();
         Console.WriteLine("Done!");
@@ -88,6 +89,7 @@ public class KMeans
         foreach (var point in _dataSet)
         {
             _assigments[index] = Classify(point);
+            index++;
         }
     }
 
@@ -121,7 +123,7 @@ public class KMeans
                 minDistance = distance;
             }
         }
-        return closestIndex;
+        return RecognizeCluster(closestIndex);
     }
 
     private double RecognizeCluster(int cluster)

@@ -4,8 +4,7 @@ public class Centroid
 {
     private static readonly Random Random = new();
     public double[] Array{get; private set;}
-
-    
+  
     private List<double[]> _oldPointsList;
 
     private readonly List<double[]> _closestPointsList;
