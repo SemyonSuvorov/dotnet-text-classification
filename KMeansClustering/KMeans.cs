@@ -10,7 +10,7 @@ namespace KMeans;
 public class KMeans
 {
     private readonly double[] _yTrue;
-    private readonly double[][] _dataSet;
+    private double[][] _dataSet;
     private readonly double[] _assigments;
     private readonly List<Centroid> _centroidList;
     private readonly int _k;
@@ -23,8 +23,8 @@ public class KMeans
         trainDf.DropColumn("Target");
         _dataSet = PreprocessText.GetFeaturesForKMeans(trainDf);
         _centroidList = new List<Centroid>();
-        _assigments = new double[_yTrue.Length];
         CreateCentroids();
+        _assigments = AssignPoints();
     }
     private void CreateCentroids()
     {
@@ -76,22 +76,21 @@ public class KMeans
             {
                 break;
             }
-
-
         }
-        AssignPoints();
         Console.WriteLine("Done!");
         Console.WriteLine();
     }
 
-    private void AssignPoints()
+    private double[] AssignPoints()
     {
+        var assigments = new double[_dataSet.Length];
         int index = 0;
         foreach (var point in _dataSet)
         {
-            _assigments[index] = Classify(point);
+            assigments[index] = Classify(point);
             index++;
         }
+        return assigments;
     }
 
     public int Classify(double[] input)
@@ -113,21 +112,28 @@ public class KMeans
     public double ClassifyString(string s)
     {
         var input = PreprocessText.VectorizeOneFeatureKMeans(s);
-        int closestIndex = -1;
-        double minDistance = double.MaxValue;
-        for (int k = 0; k < _centroidList.Count; k++)
+        var newFeatureMatrix = new double[_dataSet.Length + 1][];
+
+        for(int i = 0; i < _dataSet.Length; i++)
         {
-            double distance = EuclideanDistance(_centroidList[k].Array, input);
-            if (distance < minDistance)
-            {
-                closestIndex = k;
-                minDistance = distance;
-            }
+            newFeatureMatrix[i] = _dataSet[i];
         }
-        return RecognizeCluster(closestIndex);
+
+        newFeatureMatrix[_dataSet.Length] = input;
+        _dataSet = newFeatureMatrix;
+        CreateCentroids();
+        var newAssigments = AssignPoints();
+        var ans = newAssigments[^1];
+        var tempMatrix = new double[_dataSet.Length - 1][];
+        for (int i = 0; i < _dataSet.Length - 1; i++)
+        {
+            tempMatrix[i] = _dataSet[i];
+        }
+        _dataSet = tempMatrix;
+        return RecognizeCluster(ans);
     }
 
-    private double RecognizeCluster(int cluster)
+    private double RecognizeCluster(double cluster)
     {
         var s = Vector<double>.Build.DenseOfArray(_assigments);
         var temp = Matrix<double>.Build
